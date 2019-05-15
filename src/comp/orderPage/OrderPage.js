@@ -2,7 +2,7 @@ import React from 'react';
 import Category from './category/Category';
 import Summary from './summary/Summary';
 import CategoryList from './categoryList/CategoryList';
-import './orderPage.css';
+import './orderPage.scss';
 
 class OrderPage extends React.Component {
   render() {

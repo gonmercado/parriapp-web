@@ -1,0 +1,52 @@
+.App {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: darkgray;
+  color: white;
+  height: 60px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  h1 {
+    margin: 0 0 0 20px;
+    padding: 0;
+  }
+}
+
+.top-menu {
+  background-color: lightgray;
+  padding: 0 5px;
+  display: flex;
+  box-sizing: border-box;
+  a {
+    text-decoration: none;
+  }
+  &__menu-option {
+    padding: 3px 15px;
+    margin: 5px;
+    cursor: pointer;
+    -webkit-transition: background-color 300ms;
+    -moz-transition: background-color 300ms;
+    -ms-transition: background-color 300ms;
+    -o-transition: background-color 300ms;
+    transition: background-color 300ms;
+    &:hover {
+      background-color: gray;
+    }
+  }
+}
+
+.app-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
