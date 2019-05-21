@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const CategoryButton = ({ category, onCategoryClick }) => (
-  <div onClick={ onCategoryClick }>{ category.name }</div>
+  <div onClick={ () => { onCategoryClick(category.value); } }>{ category.name }</div>
 );
 
 CategoryButton.propTypes = {
