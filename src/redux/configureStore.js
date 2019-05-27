@@ -2,7 +2,6 @@ import { createStore, compose, applyMiddleware } from 'redux';
 import rootReducer from './rootReducer';
 import reduxImmutableStateInvariant from 'redux-immutable-state-invariant';
 import thunk  from 'redux-thunk';
-import axios from 'axios';
 
 export default function configureStore() {
   const middleWares = [
@@ -16,6 +15,4 @@ export default function configureStore() {
       applyMiddleware(...middleWares)
     )
   );
-
-  axios.config.baseURL = 'uuuu';
 }

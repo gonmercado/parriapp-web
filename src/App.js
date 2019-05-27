@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.scss';
 import OrderPage from './comp/orderPage/OrderPage';
 import Header from './comp/layout/header/Header';
