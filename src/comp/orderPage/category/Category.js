@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Proptypes from 'prop-types';
 import SubCategoryList from './subCategoryList/SubCategoryList';
-import ItemList from './itemsList/ItemsList';
+import ItemList from './itemsList/ItemsList.connector';
 
 const Category = ({ category }) => {
   // const [ subCategories, setSubCategories ] = useState([]);

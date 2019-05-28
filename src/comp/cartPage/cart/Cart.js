@@ -6,7 +6,7 @@ const Cart = ({ total, items }) => (
     <h3>Cart information</h3>
     <div>
       { items.map(item => (
-        <div><span>{ item.amount }</span><span>{ item.price }</span></div>
+        <div><span>{ item.nombre }</span><span>{ item.precio }</span></div>
       ))}
     </div>
     <div><span>{ `Total: ${ total}` }</span></div>
