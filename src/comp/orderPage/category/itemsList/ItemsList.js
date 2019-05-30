@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import ItemDescription from './itemDescription/ItemDescription';
+import { cartContext } from '../../../../cartProvider';
+import { ADD_CART_ITEM } from '../../../../redux/cart/cart.constants';
 
 const ItemList = ({ items, addCartItem }) => {
-  const handleItemCountChange = (item, operation) => {
+  const { cartDispatch } = useContext(cartContext);
+
+  const handleItemCountChange = (cartItem, operation) => {
     if(operation === 'ADD') {
-      addCartItem(item);
+      cartDispatch({ type: ADD_CART_ITEM, cartItem });
+      // addCartItem(cartItem);
     }
   }
   return (
@@ -21,7 +26,7 @@ const ItemList = ({ items, addCartItem }) => {
 
 ItemList.propTypes = {
   items: PropTypes.array,
-  addCartItem: PropTypes.func.isRequired
+  // addCartItem: PropTypes.func.isRequired
 };
 
 ItemList.defaultProps = {
